@@ -19,17 +19,6 @@
 //
 // 63	CRC
 
-import 'package:pretty_json/pretty_json.dart';
-
-void main(List<String> arguments) {
-  //Insert your QRCODE Pix here;
-  final qrcode = '';
-
-  Map<String, dynamic> qrDecoded = qrCodeDecoder(qrcode);
-
-  printPrettyJson(qrDecoded, indent: 2);
-}
-
 Map<String, dynamic> qrCodeDecoder(String qrCode) {
   Map<String, dynamic> qrCodeDecoded = {};
   var qrCodeDecode = qrCode.trim();
